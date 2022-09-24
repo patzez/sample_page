@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Patrik Zezulka" />
+    <meta
+      name="description"
+      content="Contains how to create HTML, it's elements, and moooar"
+    />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>My First WebPage - Again</title>
+
+    <style>
+      table,
+      tr,
+      th,
+      td,
+      caption {
+        border: 1px solid darkslategray;
+        font-family: "Courier New", Courier, monospace;
+        border-collapse: collapse;
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Sample page</h1>
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li><a href="#text-section-one">Text section part one</a></li>
+          <li><a href="#text-section-two">Text section part two</a></li>
+          <li><a href="#list-section">List section</a></li>
+          <li><a href="#links-section">Links section</a></li>
+          <li><a href="#images-section">Images section</a></li>
+          <li><a href="#tables-section">Tables section</a></li>
+          <li><a href="#forms-inputs-section">Forms and Inputs section</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <main>
+      <article id="text-section-one">
+        <h2>This is h2 tag</h2>
+        <p>This is a paragraph under h2.</p>
+
+        <section>
+          <h3>This is h3 tag</h3>
+          <p>
+            This is a paragraph under h3. How to: <br />...break <br />...a
+            <br />...line <br />...use resources from
+            <abbr title="Mozilla Developer Network">MDN</abbr>
+          </p>
+          <p>Somethin new: abbr tag adds description when mouseover it.</p>
+
+          <address>
+            <p>This is tag for address, notice how the browser handles it.</p>
+            <p>Good for assisting technology.</p>
+            <p>Semantic tags are also important.</p>
+          </address>
+        </section>
+        <!--TODO: Learn mooooooar-->
+      </article>
+      <hr />
+
+      <article id="text-section-two">
+        <h2>This is a second h2 tag</h2>
+        <p>
+          This is a paragraph under h2. This text is <em>emphasized</em> and
+          this text is <strong>strong</strong>.
+        </p>
+        <p>Another p tag under secont hr and h2 tag</p>
+
+        <section>
+          <h3>
+            This is a second h3 tag, showcase of some different semantic tags
+            etc.
+          </h3>
+
+          <p>
+            This is a paragraph under h3. And some long text to see a pretty
+            formatting on save.
+          </p>
+
+          <figure>
+            <figcaption>
+              Figurecaption inside a figure tag, must be first or last thing
+              inside a figure tag. <br />
+              An example of HTML5 code:
+            </figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            </p>
+          </figure>
+
+          <aside>
+            <details>
+              <summary>
+                Guess what <mark>semantic element</mark> is that?
+              </summary>
+              <p>
+                You guessed right! It's summary inside details inside aside
+                element!
+              </p>
+            </details>
+          </aside>
+
+          <p>
+            To provide meaning to time, we can use time tag, for example
+            <time datetime="08:00">8am</time>, another one, I code for
+            <time datetime="PT20H">20 hours</time> a day,you won't see it, but
+            it's there!
+          </p>
+
+          <p>
+            Some elements you want to avoid, because they are getting outdated
+            (eventho they were / are used pretty frequently):
+          </p>
+          <ul>
+            <li>
+              &lt;div&gt; &lt;/div&gt; &#8594; block element with no semantic
+              meaning
+            </li>
+            <li>
+              &lt;span&gt; &lt;/span&gt; &#8594; inline element, again, no
+              meaning to code, no semantic meaning
+            </li>
+          </ul>
+        </section>
+      </article>
+      <hr />
+
+      <article id="list-section">
+        <h2>List section</h2>
+        <ol>
+          <li>This is first item of ordered list (tag ol)</li>
+          <li>This is second item of ordered list</li>
+          <li>This is third item of ordered list</li>
+        </ol>
+
+        <ul>
+          <li>Unordered list item 1 (tag ul)</li>
+          <li>Second item of unordered list</li>
+          <li>And lastly third item of ul</li>
+          <li><p>There can also be a paragraph</p></li>
+          <li><p>Adding a paragraph creates a space between items</p></li>
+          <li>It is still just one unordered list</li>
+        </ul>
+
+        <dl>
+          <dt>This is descriptive term of descriptive list</dt>
+          <dd>This is description detail</dd>
+
+          <dt>This is another descriptive term of dl</dt>
+          <dd>Descriptive item number one</dd>
+          <dd>Descriptive item number two</dd>
+          <dd>
+            Notice how it automatically make space at the beggining of the line
+          </dd>
+        </dl>
+      </article>
+      <hr />
+
+      <article id="links-section">
+        <h2>Links section</h2>
+        <ul>
+          <li>
+            This is a link to <a href="https://developer.mozilla.org/">MDN</a>
+          </li>
+          <li>
+            Download an
+            <a href="favicon_io/favicon.ico" download>HTML5 favicon</a> that is
+            used on this page
+          </li>
+          <li>
+            Contact me at <a href="mailto:random@email.com">my email address</a>
+          </li>
+          <li>Dial <a href="tel:+420123456789">my phone numer</a></li>
+          <li>
+            <a href="https://www.google.com/" target="_blank">Google</a> that
+            opens in new tab
+          </li>
+        </ul>
+      </article>
+      <hr />
+
+      <article id="images-section">
+        <h2>Images section</h2>
+        <!--Width and height does not have to be there, but it's recommended-->
+        <!--loading="lazy" does not load the img right away, but when the user is about to scroll down to it-->
+        <img
+          src="img/skateboard.jpg"
+          alt="Skateboard photo"
+          title="Title not requiered, but can be here when user mouseovers"
+          width="300"
+          height="300"
+        />
+        <figure>
+          <img
+            src="img/sky.jpg"
+            alt="Sky image"
+            title="Photo of a cloudy sky"
+            width="400"
+            height="225"
+            loading="lazy"
+          />
+          <figcaption>Photo of a cloudy sky in a figure tag</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="img/grass.jpg"
+            alt="Grass photo"
+            title="That's something unexpected, grass"
+            width="400"
+            height="267"
+            loading="lazy"
+          />
+          <figcaption>Grass photo also inside a figure tag</figcaption>
+        </figure>
+      </article>
+      <hr />
+
+      <article id="tables-section">
+        <h2>Tables section (with little CSS)</h2>
+
+        <table>
+          <caption>
+            My Daily Schedule
+          </caption>
+
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th scope="col">Time</th>
+              <th scope="col">Activity</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">Morning</th>
+              <td>
+                <time datetime="08:00">8am</time> -
+                <time datetime="11:00">11am</time>
+              </td>
+              <td>Write Code</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Break</th>
+              <td>
+                <time datetime="11:00">11am</time> -
+                <time datetime="12:00">12pm</time>
+              </td>
+              <td>Eat Lunch</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Afternoon</th>
+              <td>
+                <time datetime="12:00">12pm</time> -
+                <time datetime="17:00">5pm</time>
+              </td>
+              <td>Study for Other Courses</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Evening</th>
+              <td rowspan="2">All Other Time</td>
+              <td>Free Time</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Night</th>
+              <td>Sleep</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="3">
+                And that's what I do every day. Just eat, sleep, code ...and
+                recharge!
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+      <hr />
+
+      <article id="forms-inputs-section">
+        <h2>Forms and Inputs section</h2>
+        <p><strong>Contact me!</strong> I'd really like to hear from you!</p>
+
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Info</legend>
+            <p>
+              <label for="firstName">First Name:</label>
+              <!-- autofocus => when the page realoads, you can start typing in the input right away, the page autofocuses the autofocus element-->
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Beatrice"
+                autocomplete="on"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="lastName">Last Name:</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Smith"
+                autocomplete="on"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Your password"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@google.com"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="phone">Phone:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="0123456789"
+                pattern="[0-9]{10}"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="decade">Favorite Decade:</label>
+              <input
+                type="number"
+                name="decade"
+                id="decade"
+                min="1950"
+                max="2020"
+                step="10"
+                value="1980"
+              />
+            </p>
+
+            <p>
+              <label for="coffee">Favourite coffee:</label>
+              <select name="coffee" id="coffee" multiple size="5">
+                <optgroup label="Coffees">
+                  <option value="regular coffee">Regular Coffee</option>
+                  <option value="iced coffee">Iced Coffee</option>
+                </optgroup>
+
+                <optgroup label="Espresso Drinks">
+                  <option value="latte">Latte</option>
+                  <option value="cappuccino" selected>Cappuccino</option>
+                  <option value="cortado">Cortado</option>
+                  <option value="americano">Americano</option>
+                </optgroup>
+                <option value="other">Other</option>
+              </select>
+            </p>
+
+            <!-- <p>
+              <label for="coffee">Favorite Coffee:</label>
+              <input type="text" name="coffee" id="coffee" list="coffee-list" />
+              <datalist id="coffee-list">
+                <option value="coffee"></option>
+                <option value="latte"></option>
+                <option value="espresso"></option>
+                <option value="cortado"></option>
+                <option value="americano"></option>
+                <option value="other"></option>
+              </datalist>
+            </p> -->
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend>What is your favorite food?</legend>
+
+            <p>
+              <input type="radio" name="food" id="tacos" value="tacos" />
+              <label for="tacos">Tacos</label>
+            </p>
+
+            <p>
+              <input type="radio" name="food" id="pizza" value="pizza" />
+              <label for="pizza">Pizza</label>
+            </p>
+
+            <p>
+              <input type="radio" name="food" id="other" value="other" />
+              <label for="other">Other</label>
+            </p>
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend>Do you have pets?</legend>
+
+            <p>
+              <input type="checkbox" name="pets" id="dog" value="dog" />
+              <label for="dog">Dog</label>
+            </p>
+
+            <p>
+              <input type="checkbox" name="pets" id="cat" value="cat" />
+              <label for="cat">Cat</label>
+            </p>
+
+            <p>
+              <input type="checkbox" name="pets" id="hamster" value="hamster" />
+              <label for="hamster">Hamster</label>
+            </p>
+
+            <p>
+              <input
+                type="checkbox"
+                name="pets"
+                id="otherPet"
+                value="otherPet"
+              />
+              <label for="otherPet">Other</label>
+            </p>
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend>Send Me a Note</legend>
+            <label for="message">Your Message</label>
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Type your message here"
+            ></textarea>
+          </fieldset>
+          <br />
+
+          <!-- <input type="submit" /> -->
+          <button type="submit">Submit</button>
+          <button
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            Post
+          </button>
+          <button type="reset">Reset</button>
+          <!-- Sensitive information never send with a GET request, because we can see all of submitted information in URL address. We wanna use POST request for sensitive information. -->
+        </form>
+      </article>
+    </main>
+    <hr />
+
+    <footer>
+      <p><a href="#">Back to top</a></p>
+
+      <p>
+        &lt;&lt;&lt; &copy;
+        <a href="about.html">Patrik Zezulka</a> &gt;&gt;&gt;
+      </p>
+    </footer>
+  </body>
+</html>
