@@ -6,4 +6,4 @@ Created to see and quickly find many different elements in HTML.
 
 See it deployed:
 
-<a href="https://patzez.github.io/sample_page/" target="_blank">Sample Page</a>
+(Sample page)[https://patzez.github.io/sample_page/]
